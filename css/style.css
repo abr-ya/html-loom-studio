@@ -29,7 +29,6 @@ body {
 .header.fixed{
     position: fixed;
     background-color: white;
-    left: calc(50% - 585px);
     z-index: 8000;
     margin-top: 0;
 }
@@ -71,7 +70,7 @@ body {
 }
 
 .header .menu ul li ul li{
-    padding: 10px 0;
+    padding: 10px;
 }
 
 .header .menu-xs ul li {
@@ -112,9 +111,11 @@ h1 {
     line-height: 22px;
 }
 
-h2.top {
+p.top {
+    color: #606060;
+    font-size: 25px;
     font-weight: 300;
-    text-transform: none;
+    line-height: 22px;
     margin-top: 20px;
     margin-bottom: 60px;
 }
@@ -437,26 +438,17 @@ h2.top {
 /* ============== media ============== */
 /* Large */
 @media only screen and (max-width: 1200px) {
-    .header.fixed {
-        width: 960px;
-        left: calc(50% - 480px);
-    }
+
 }
 
 /* Medium */
 @media only screen and (max-width: 992px) {
-    .header.fixed {
-        width: 720px;
-        left: calc(50% - 360px);
-    }
+
 }
 
 /* Small */ 
 @media only screen and (max-width: 768px) {
-    .header.fixed {
-        width: 540px;
-        left: calc(50% - 270px);
-    }
+
 }
 
 /* Extrasmall */
