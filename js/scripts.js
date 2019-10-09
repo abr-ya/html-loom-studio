@@ -30,5 +30,26 @@ $(document).ready(function() {
         slideshowEnd: function(){}, // Triggers after all slides have been shown
         lastSlide: function(){}, // Triggers when last slide is shown
         afterLoad: function(){} // Triggers when slider has loaded
-    });    
+    });
+    
+    // мобильное меню
+    var menu = new MmenuLight( document.querySelector( '#menu' ), {
+        title: 'MENU',
+        // theme: 'light',// 'dark'
+        // slidingSubmenus: true,// false
+        // selected: 'Selected'
+    });
+    menu.enable( 'all' ); // '(max-width: 900px)'
+    menu.offcanvas({
+        // position: 'left',// 'right'
+        // move: true,// false
+        // blockPage: true,// false / 'modal'
+    });
+    //	Open the menu.
+    document.querySelector( 'a[href="#menu"]' ).addEventListener( 'click', ( evnt ) => {
+        menu.open();
+        //	Don't forget to "preventDefault" and to "stopPropagation".
+        evnt.preventDefault();
+        evnt.stopPropagation();
+    });
 });
