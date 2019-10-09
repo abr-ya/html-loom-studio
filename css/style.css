@@ -42,14 +42,16 @@ body {
     justify-content: space-around;
 }
 
-.header .menu li,
-.header .menu-xs li {
+.header .menu li {
     position: relative;
     list-style: none;
 }
 
 .header .menu li a {
-    color: black;
+    color: #606060;
+    font-size: 13px;
+    font-weight: 800;
+    line-height: 22px;
     text-decoration: none;
 }
 
@@ -73,33 +75,6 @@ body {
 
 .header .menu ul li ul li{
     padding: 10px;
-}
-
-.header .menu-xs ul li {
-    display: block;
-    padding: 10px 0;
-    background-color: aqua;
-}
-
-.header .menu-xs ul li ul {
-    position: absolute;
-    display: none;
-}
-
-.header .menu-xs ul li ul.vis {
-    display: block;
-}
-
-.header .menu-xs ul li ul li {
-    padding: 10px 20px;
-    border: 1px solid grey;
-    background-color: aquamarine;
-}
-
-.header .menu-xs ul li ul li:hover {
-    padding: 10px 20px;
-    border: 1px solid grey;
-    background-color: aqua;
 }
 /* === /header === */
 

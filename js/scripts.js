@@ -8,11 +8,6 @@ $(document).ready(function() {
         }
     });
 
-    // мобильное меню
-    $("#menu-mobile").click(function() {
-        $("#menu-mobile-list").toggleClass("vis");
-    });
-
     // инициализация слайдера
     $('#slider').nivoSlider({
         effect: 'random', // Specify sets like: 'fold,fade,sliceDown'
